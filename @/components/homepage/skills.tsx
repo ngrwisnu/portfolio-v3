@@ -7,6 +7,7 @@ const Skills = () => {
       "jQuery",
       "react",
       "next",
+      "vue",
       "sass",
       "bootstrap",
       "tailwind",
@@ -15,7 +16,7 @@ const Skills = () => {
     others: [
       "ui/ux",
       "figma",
-      "rest api",
+      "rest-api",
       "mongodb",
       "postgresql",
       "prisma",

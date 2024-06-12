@@ -8,7 +8,7 @@ const EmailButton = () => {
 
   return (
     <button
-      className="relative inline-flex h-12 overflow-hidden rounded-md p-[2px]"
+      className="relative inline-flex h-10 overflow-hidden rounded-md p-[2px]"
       onClick={() =>
         window.navigator.clipboard
           .writeText("adiprayogongrwisnu@gmail.com")

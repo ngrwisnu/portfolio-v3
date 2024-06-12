@@ -1,10 +1,14 @@
+"use client";
+
 import React from "react";
 import SelectedWork from "./selected-work";
 import data from "../../../../data/works";
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
+import BaseButton from "@/components/ui/base-button";
+import { useRouter } from "next/navigation";
 
 const SelectedWorks = () => {
+  const { push } = useRouter();
+
   return (
     <section
       id="works"
@@ -35,11 +39,11 @@ const SelectedWorks = () => {
             })
             .reverse()}
         </div>
-        {/* <div className="flex items-center justify-center">
-          <Button variant="outline" asChild>
-            <Link href="/works">More Works</Link>
-          </Button>
-        </div> */}
+        <div className="flex items-center justify-center">
+          <BaseButton size="lg" actionFn={() => push("/works")}>
+            More Works
+          </BaseButton>
+        </div>
       </div>
     </section>
   );

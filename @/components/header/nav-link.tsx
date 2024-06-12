@@ -22,7 +22,9 @@ const NavLink = ({
     <li
       className={clsx(
         className,
-        name == "Resume" ? "rounded-full bg-neutral-900" : ""
+        name == "Resume"
+          ? "rounded-full bg-gradient-to-br from-indigo-500 to-purple-500"
+          : ""
       )}
     >
       <Link href={href} className={linkStyle}>
