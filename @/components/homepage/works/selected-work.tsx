@@ -54,18 +54,18 @@ const SelectedWork = (props: SelectedWorkType) => {
 
       <div className="w-full flex justify-end items-center text-sm font-medium gap-4 mt-6">
         <Link href={`/works/${slug}`}>Read more</Link>
-        <Button
+        {/* <Button
           variant="outline"
           className="text-list-400 text-sm font-medium border-list-400 px-4 py-2"
           asChild
         >
-          <LitUpButton
-            text="Go to live demo"
-            position="right"
-            link={externalLink as string}
-            icon={<RiSendPlaneFill />}
-          />
-        </Button>
+        </Button> */}
+        <LitUpButton
+          text="Go to live demo"
+          position="right"
+          link={externalLink as string}
+          icon={<RiSendPlaneFill />}
+        />
       </div>
     </div>
   );

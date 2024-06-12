@@ -5,6 +5,7 @@ import { AlignJustify, ArrowDownToLine, X } from "lucide-react";
 import { useState, useRef, useEffect } from "react";
 import { desktopMenu, mobileMenu } from "./menu";
 import NavLink from "./nav-link";
+import LitUpButton from "../ui/litUp-button";
 
 const Header = () => {
   const [isShow, setIsShow] = useState(true);
@@ -43,9 +44,9 @@ const Header = () => {
   return (
     <div
       ref={headerRef}
-      className={`static flex w-full bg-transparent px-4 md:fixed ${
+      className={`absolute flex w-full bg-transparent px-4 md:fixed ${
         !isShow ? "-top-full" : "top-0"
-      } z-30 transition-all duration-700 delay-150 ease-in-out`}
+      } z-[999] transition-all duration-700 delay-150 ease-in-out`}
     >
       <header className="static flex w-full items-start justify-center self-stretch py-5 text-neutral-100 md:relative">
         <div
@@ -108,7 +109,7 @@ const Header = () => {
             </ul>
           </nav>
         </div>
-        <Button
+        {/* <Button
           className="absolute top-5 right-11 hidden rounded-md md:flex"
           asChild
         >
@@ -118,7 +119,14 @@ const Header = () => {
           >
             <ArrowDownToLine size={18} /> Resume
           </a>
-        </Button>
+        </Button> */}
+        <div className="absolute top-5 right-11 hidden h-header rounded-md md:flex">
+          <LitUpButton
+            text="Resume"
+            link="/assets/docs/CV-Ngr-Wisnu-Adiprayogo.pdf"
+            icon={<ArrowDownToLine size={18} />}
+          />
+        </div>
       </header>
     </div>
   );

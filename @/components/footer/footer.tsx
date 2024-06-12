@@ -41,7 +41,7 @@ const Footer = () => {
       </div>
       <div className="flex w-full justify-center">
         <div className="w-full max-w-[1440px] text-xs text-neutral-100">
-          &copy; 2023. Ngr Wisnu
+          &copy; 2024. Ngr Wisnu
         </div>
       </div>
     </footer>

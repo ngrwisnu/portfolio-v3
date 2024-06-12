@@ -2,6 +2,8 @@ import Image from "next/image";
 import { Button } from "../ui/button";
 import Link from "next/link";
 import { Badge } from "../ui/badge";
+import LitUpButton from "../ui/litUp-button";
+import { RiSendPlaneFill } from "react-icons/ri";
 
 interface ProjectJumbotronProps {
   title: string;
@@ -22,9 +24,12 @@ const ProjectJumbotron = ({ title, image, webLink }: ProjectJumbotronProps) => {
     <div className="flex flex-col items-center gap-12">
       <h2 className="text-3xl font-medium">{title}</h2>
       {webLink && (
-        <Button asChild>
-          <Link href={webLink}>Live Demo</Link>
-        </Button>
+        <LitUpButton
+          text="Live demo"
+          position="right"
+          link={webLink as string}
+          icon={<RiSendPlaneFill />}
+        />
       )}
       <figure className="flex max-h-[620px] w-full justify-center bg-[#F5F5F5]">
         <Image
@@ -95,7 +100,7 @@ const ProjectGallery = ({ children }: { children: React.ReactNode }) => {
 const ProjectDetail = ({ children }: { children: React.ReactNode }) => {
   return (
     <section id="project-detail" className="w-full px-4 dark:text-white">
-      <div className="container-content py-24">
+      <div className="container-content py-9 md:py-24">
         <div className="flex flex-col gap-24">{children}</div>
       </div>
     </section>

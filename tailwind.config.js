@@ -26,6 +26,9 @@ module.exports = {
           400: "#9747FF",
         },
       },
+      height: {
+        header: "56px",
+      },
       maxWidth: {
         "8xl": "1440px",
       },

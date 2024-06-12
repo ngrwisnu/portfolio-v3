@@ -36,7 +36,7 @@ const Hero = () => {
           className="absolute bottom-[4%] flex flex-col gap-2 items-center justify-center px-4 text-center dark:text-white max-w-[598px] mt-5 text-base md:text-xl leading-[30px]"
         >
           <div className="font-semibold ">Ngr Wisnu</div>
-          <div className="font-normal">
+          <div className="font-normal text-slate-500">
             is a web developer, skilled in both front-end and back-end
             development, with a focus on using JavaScript and its libraries to
             build modern web applications.

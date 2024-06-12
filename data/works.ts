@@ -14,6 +14,7 @@ export interface WorksType {
     name: string;
     icon: string;
   }[];
+  bgColor?: string;
 }
 
 const data: WorksType[] = [
@@ -29,6 +30,7 @@ const data: WorksType[] = [
     linkExternal: "https://ngrwisnu.github.io/landing-page-fcc/",
     designedBy: "Ngr Wisnu",
     myRole: "UI Engineer",
+    bgColor: "#E5E5E5",
   },
   {
     id: 102,
@@ -42,6 +44,7 @@ const data: WorksType[] = [
     linkExternal: "https://ngrwisnu.github.io/idcamp22-review/",
     designedBy: "Ngr Wisnu",
     myRole: "UI Engineer",
+    bgColor: "#FAF0E6",
   },
   {
     id: 103,
@@ -61,6 +64,21 @@ const data: WorksType[] = [
     linkExternal: "https://velcation.netlify.app/",
     designedBy: "Ngr Wisnu",
     myRole: "Front-end Developer",
+    bgColor: "#E8DFFC",
+  },
+  {
+    id: 104,
+    slug: "mentor-finder",
+    title: "Mentor Finder",
+    description:
+      "Hello Vue3! The uncomplicated web built with Vue 3 and Options API",
+    imgUrls: ["finder-preview.jpg"],
+    technologies: ["Vue"],
+    isSelected: false,
+    linkExternal: "https://mentor-finder-21291.web.app/",
+    designedBy: "Ngr Wisnu",
+    myRole: "Front-end Developer",
+    bgColor: "#FFF",
   },
   {
     id: 11,
