@@ -81,6 +81,20 @@ const data: WorksType[] = [
     bgColor: "#FFF",
   },
   {
+    id: 105,
+    slug: "wall-g",
+    title: "Wall-G",
+    description:
+      "Utilized Sass/Scss for efficient styling and jQuery for dynamic features in a wallpaper gallery web app project.",
+    imgUrls: ["wall-g-preview.jpg"],
+    technologies: ["SASS", "jQuery", "Vite"],
+    isSelected: false,
+    linkExternal: "https://wall-g-73006.web.app/",
+    designedBy: "Ngr Wisnu",
+    myRole: "Front-end Developer",
+    bgColor: "#FFF",
+  },
+  {
     id: 11,
     slug: "luxerior",
     title: "Luxerior",
