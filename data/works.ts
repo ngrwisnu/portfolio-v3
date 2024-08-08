@@ -1,5 +1,4 @@
 export interface WorksType {
-  id: number;
   slug: string;
   title: string;
   description: string;
@@ -19,7 +18,6 @@ export interface WorksType {
 
 const data: WorksType[] = [
   {
-    id: 101,
     slug: "twice-album-page",
     title: "Twice Album Page",
     description:
@@ -33,7 +31,6 @@ const data: WorksType[] = [
     bgColor: "#E5E5E5",
   },
   {
-    id: 102,
     slug: "idcamp-2022",
     title: "IDCamp 2022",
     description:
@@ -47,7 +44,6 @@ const data: WorksType[] = [
     bgColor: "#FAF0E6",
   },
   {
-    id: 103,
     slug: "velcation",
     title: "Velcation",
     description:
@@ -67,35 +63,6 @@ const data: WorksType[] = [
     bgColor: "#E8DFFC",
   },
   {
-    id: 104,
-    slug: "mentor-finder",
-    title: "Mentor Finder",
-    description:
-      "Hello Vue3! The uncomplicated web built with Vue 3 and Options API",
-    imgUrls: ["finder-preview.jpg"],
-    technologies: ["Vue"],
-    isSelected: false,
-    linkExternal: "https://mentor-finder-21291.web.app/",
-    designedBy: "Ngr Wisnu",
-    myRole: "Front-end Developer",
-    bgColor: "#FFF",
-  },
-  {
-    id: 105,
-    slug: "wall-g",
-    title: "Wall-G",
-    description:
-      "Utilized Sass/Scss for efficient styling and jQuery for dynamic features in a wallpaper gallery web app project.",
-    imgUrls: ["wall-g-preview.jpg"],
-    technologies: ["SASS", "jQuery", "Vite"],
-    isSelected: false,
-    linkExternal: "https://wall-g-73006.web.app/",
-    designedBy: "Ngr Wisnu",
-    myRole: "Front-end Developer",
-    bgColor: "#FFF",
-  },
-  {
-    id: 11,
     slug: "luxerior",
     title: "Luxerior",
     description:
@@ -117,7 +84,32 @@ const data: WorksType[] = [
     myRole: "Fullstack Developer",
   },
   {
-    id: 12,
+    slug: "mentor-finder",
+    title: "Mentor Finder",
+    description:
+      "Hello Vue3! The uncomplicated web built with Vue 3 and Options API",
+    imgUrls: ["finder-preview.jpg"],
+    technologies: ["Vue"],
+    isSelected: false,
+    linkExternal: "https://mentor-finder-21291.web.app/",
+    designedBy: "Ngr Wisnu",
+    myRole: "Front-end Developer",
+    bgColor: "#FFF",
+  },
+  {
+    slug: "wall-g",
+    title: "Wall-G",
+    description:
+      "Utilized Sass/Scss for efficient styling and jQuery for dynamic features in a wallpaper gallery web app project.",
+    imgUrls: ["wall-g-preview.jpg"],
+    technologies: ["SASS", "jQuery", "Vite"],
+    isSelected: false,
+    linkExternal: "https://wall-g-73006.web.app/",
+    designedBy: "Ngr Wisnu",
+    myRole: "Front-end Developer",
+    bgColor: "#FFF",
+  },
+  {
     slug: "topstore",
     title: "TopStore",
     description:
@@ -170,7 +162,6 @@ const data: WorksType[] = [
     myRole: "Front-end Developer",
   },
   {
-    id: 13,
     slug: "black-honey",
     title: "Black Honey",
     description:
