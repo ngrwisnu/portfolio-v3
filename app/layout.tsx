@@ -5,6 +5,7 @@ import "./globals.css";
 import Footer from "@/components/footer/footer";
 import MainContent from "@/components/main-content";
 import { Analytics } from "@vercel/analytics/react";
+import HotjarScript from "@/components/hotjar";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -37,6 +38,7 @@ export default function RootLayout({
         <MainContent>{children}</MainContent>
         <Footer />
         <Analytics />
+        <HotjarScript />
       </body>
     </html>
   );
